@@ -2,7 +2,7 @@ var db = require('../config');
 var bcrypt = require('bcrypt-nodejs');
 var Promise = require('bluebird');
 
-var User = {
+var UserSchmea = {
   initialize: function(username, password) {
     // db.createUser(username, hashPassword(password));
     db.createUser(username, password);
